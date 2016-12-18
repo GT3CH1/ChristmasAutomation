@@ -5,10 +5,11 @@
     if($name == "1"){
       exec("echo 0 > ./data/1.dat");
       echo 'Turning off tree';
-      
+      exec("./toggle.sh");
     }else{
       exec("echo 1 > ./data/1.dat");
       echo 'Turning on tree';
-    }
+      exec("./toggle.sh");
   }
+}
 ?>
